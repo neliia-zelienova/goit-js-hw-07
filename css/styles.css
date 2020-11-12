@@ -1,0 +1,28 @@
+.galleryItem {
+    display: flex;
+    justify-content: center;
+}
+
+.galleryItem:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.galleryImage{
+    width: 50%;
+}
+
+#gallery{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.counter-container{
+    width: 100%;
+    margin-left: 20px;
+}
+
+.counter-container .button{
+    width: 30px;
+    height: 30px;
+}
