@@ -20,9 +20,28 @@
 .counter-container{
     width: 100%;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .counter-container .button{
     width: 30px;
     height: 30px;
 }
+
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+    margin-bottom: 30px;
+  }
+  
+  #validation-input.valid {
+    border-color: #4caf50;
+  }
+  
+  #validation-input.invalid {
+    border-color: #f44336;
+  }
+/* 
+  .task-06 #text{
+      font-size: 24px;
+  } */
