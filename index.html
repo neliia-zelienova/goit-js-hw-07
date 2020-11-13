@@ -1,81 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 07</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 07</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
-    <ul id="categories">
-        <li class="item">
-          <h2>Животные</h2>
-      
-          <ul>
-            <li>Кот</li>
-            <li>Хомяк</li>
-            <li>Лошадь</li>
-            <li>Попугай</li>
-          </ul>
-        </li>
-        <li class="item">
-          <h2>Продукты</h2>
-      
-          <ul>
-            <li>Хлеб</li>
-            <li>Петрушка</li>
-            <li>Творог</li>
-          </ul>
-        </li>
-        <li class="item">
-          <h2>Технологии</h2>
-      
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node</li>
-          </ul>
-        </li>
-      </ul>
+  <div class="wrapper">
+    <div class="container task-01">
+      <details>
+        <summary>Task-01</summary>
+        <ul id="categories">
+          <li class="item">
+            <h2>Животные</h2>
 
+            <ul>
+              <li>Кот</li>
+              <li>Хомяк</li>
+              <li>Лошадь</li>
+              <li>Попугай</li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2>Продукты</h2>
+
+            <ul>
+              <li>Хлеб</li>
+              <li>Петрушка</li>
+              <li>Творог</li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2>Технологии</h2>
+
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node</li>
+            </ul>
+          </li>
+        </ul>
+      </details>
+    </div>
+
+    <div class="container task-02">
       <ul id="ingredients"></ul>
-
+    </div>
+    <div class="container task-03">
       <ul id="gallery"></ul>
+    </div>
 
-      <div class="counter-container">
-        <button class="button decrement">-</button>
-        <span class="counter-value">0</span>
-        <button class="button increment">+</button>
-      </div>
+    <div class="container task-04">
+      <button class="button decrement">-</button>
+      <span class="counter-value">0</span>
+      <button class="button increment">+</button>
+    </div>
 
+    <div class="container task-05">
       <input type="text" placeholder="Ваше имя?" id="name-input" />
-<h1>Привет, <span id="name-output">незнакомец</span>!</h1>
-      
+      <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+    </div>
 
 
-<input
-  type="text"
-  id="validation-input"
-  data-length="6"
-  placeholder="Введи 6 символов"
-/>
+    <div class="container task-06">
+      <input type="text" id="validation-input" data-length="6" placeholder="Введи 6 символов" />
+    </div>
 
 
-<div class="task-06">
-  <input id="font-size-control" type="range" />
-<br />
-<span id="text">Абракадабра!</span>
-</div>
+    <div class="container task-07">
+      <input id="font-size-control" type="range" />
+      <br />
+      <span id="text">Абракадабра!</span>
+    </div>
+  
+
+  <div class="container task-08">
+  <div id="controls">
+    <input type="number" min="0" max="100" step="1" />
+    <button type="button" data-action="render">Создать</button>
+    <button type="button" data-action="destroy">Очистить</button>
+  </div>
+  
+  <div id="boxes"></div>
+
+  </div>
+  </div>
 
 
-      <script type="module" src="./js/task-01.js"></script>
-      <script type="module" src="./js/task-02.js"></script>
-      <script type="module" src="./js/task-03.js"></script>
-      <script type="module" src="./js/task-04.js"></script>
-      <script type="module" src="./js/task-05.js"></script>
-      <script type="module" src="./js/task-06.js"></script>
-      <script type="module" src="./js/task-07.js"></script>
+  <script type="module" src="./js/task-01.js"></script>
+  <script type="module" src="./js/task-02.js"></script>
+  <script type="module" src="./js/task-03.js"></script>
+  <script type="module" src="./js/task-04.js"></script>
+  <script type="module" src="./js/task-05.js"></script>
+  <script type="module" src="./js/task-06.js"></script>
+  <script type="module" src="./js/task-07.js"></script>
+  <script type="module" src="./js/task-08.js"></script>
 </body>
+
 </html>

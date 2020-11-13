@@ -1,47 +1,69 @@
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  max-width: 1024px;
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .galleryItem {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.galleryItem:not(:last-child){
-    margin-bottom: 20px;
+.galleryItem:not(:last-child) {
+  margin-bottom: 20px;
 }
 
-.galleryImage{
-    width: 50%;
+.galleryImage {
+  width: 50%;
 }
 
-#gallery{
-    list-style: none;
-    width: 100%;
-    margin-bottom: 20px;
+#gallery {
+  list-style: none;
+  width: 100%;
 }
 
-.counter-container{
-    width: 100%;
-    margin-left: 20px;
-    margin-bottom: 20px;
+.task-04 {
+  width: 100%;
+  margin-left: 20px;
 }
 
-.counter-container .button{
-    width: 30px;
-    height: 30px;
+.task-04 .button {
+  width: 30px;
+  height: 30px;
 }
-
 
 #validation-input {
-    border: 3px solid #bdbdbd;
-    margin-bottom: 30px;
-  }
-  
-  #validation-input.valid {
-    border-color: #4caf50;
-  }
-  
-  #validation-input.invalid {
-    border-color: #f44336;
-  }
-/* 
-  .task-06 #text{
-      font-size: 24px;
-  } */
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+.task-07 {
+  height: 200px;
+}
+.task-07 #text {
+  font-size: 50px;
+}
+
+.created-box {
+  width: 30px;
+  height: 30px;
+}
+
+.created-box:not(:last-child) {
+  margin-bottom: 10px;
+}
