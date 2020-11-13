@@ -7,9 +7,15 @@
   max-width: 1024px;
 }
 
+.task-header {
+  text-align: center;
+}
+
 .container {
   width: 100%;
+  padding-bottom: 10px;
   margin-bottom: 20px;
+  border: 2px grey dotted;
 }
 
 .galleryItem {
@@ -28,16 +34,27 @@
 #gallery {
   list-style: none;
   width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.task-04 {
-  width: 100%;
-  margin-left: 20px;
+.task-04 .counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-04 .counter-value {
+  margin-right: 10px;
 }
 
 .task-04 .button {
   width: 30px;
   height: 30px;
+}
+
+.task-04 .button:not(:last-child) {
+  margin-right: 10px;
 }
 
 #validation-input {
@@ -62,6 +79,10 @@
 .created-box {
   width: 30px;
   height: 30px;
+}
+
+#controls {
+  margin-bottom: 10px;
 }
 
 .created-box:not(:last-child) {

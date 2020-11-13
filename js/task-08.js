@@ -33,6 +33,7 @@ const destroyBoxes = () => {
 
 const btnAction = (event) => {
     if (event.target.dataset.action === 'render') {
+        destroyBoxes();
         const boxesAmountRef = document.querySelector('#controls input');
     createBoxes(Number(boxesAmountRef.value));
     } else {
