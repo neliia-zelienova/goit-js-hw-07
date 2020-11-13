@@ -11,16 +11,18 @@ function getRandomColor() {
 }
 
 const createBoxes = (amount) => {
+    if (amount > 0) {
     const boxesArray = [];
-    for (let i = 0; i < amount; ++i){
-        boxesArray.push(document.createElement('div'));
-        boxesArray[i].classList.add('created-box');
-        boxesArray[i].style.backgroundColor = getRandomColor();
-        boxesArray[i].style.width = `${30 + (i * 10)}px`;
-        boxesArray[i].style.height = `${30 + (i * 10)}px`;
+        for (let i = 0; i < amount; ++i) {
+            boxesArray.push(document.createElement('div'));
+            boxesArray[i].classList.add('created-box');
+            boxesArray[i].style.backgroundColor = getRandomColor();
+            boxesArray[i].style.width = `${30 + (i * 10)}px`;
+            boxesArray[i].style.height = `${30 + (i * 10)}px`;
+        }
+        const insidedivRef = document.querySelector('#boxes');
+        insidedivRef.append(...boxesArray);
     }
-    const insidedivRef = document.querySelector('#boxes');
-    insidedivRef.append(...boxesArray);
 }
 
 const destroyBoxes = () => {
@@ -32,6 +34,7 @@ const destroyBoxes = () => {
 }
 
 const btnAction = (event) => {
+    
     if (event.target.dataset.action === 'render') {
         destroyBoxes();
         const boxesAmountRef = document.querySelector('#controls input');
