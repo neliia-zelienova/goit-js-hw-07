@@ -1,5 +1,5 @@
 const checkInput = (event) => {
-   if (event.target.value.length >= event.target.dataset.length){
+   if (event.target.value.length === Number(event.target.dataset.length)){
      event.target.classList.add('valid') ;
      if (event.target.classList.contains('invalid')){
          event.target.classList.remove('invalid');
